@@ -18,10 +18,10 @@
         line-height: 32px;
         font-weight: 500;
         margin: 0;
-        padding: 50px 0 24px;
+        padding: 154px 0 24px;
     }
     .header__bg{
-        height: 100vh;
+        height: 901px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -33,7 +33,7 @@
             content: '';
             position: absolute;
             width: 100%;
-            height: 100vh;
+            height: 901px;
             top: 0;
             left: 0;
             background-color: rgba(#000, .51);
@@ -43,8 +43,7 @@
         color: #fff;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        height: 100vh;
+        height: 787px;
     }
     &__title{
         font-size: 64px;
@@ -79,10 +78,16 @@
         justify-content: center;
     }
 }
+
 .btn{
     background-color: #3A4574;
     padding: 38px 65px;
     cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background-color: #2b6cf5;
 }
 
 .about{
@@ -112,22 +117,17 @@
         line-height: 32px;        
     }
     &__right{
+        max-width: 670px;
+        width: 100%;
         &-box{
             display: flex;
         }
-        &-right-img{
-            height: 502px;
-            width: 471px;
+        &-img{
+            height: 638px;
+            max-width: 670px;
+            width: 100%;
             background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-        &-left-img{
-            height: 502px;
-            width: 471px;
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             background-position: center;
             position: relative;
         }
@@ -144,7 +144,7 @@
     background-color: #3A4574;
     color: #fff;
     &__item{
-        width: 785px;
+        max-width: 785px;
         margin: 220px auto;
         text-align: center;
         &-title{
@@ -247,13 +247,13 @@
         top: -350px;
         & .swiper-button-next{
             position: absolute;
-            top: -60px;
-            right: 20px;
+            top: -59px;
+            right: 23px;
         }
         & .swiper-button-prev{
             position: absolute;
             top: -59px;
-            left: 92%;
+            left: 87%;
             z-index: 100;
         }
     }
@@ -322,6 +322,9 @@
     &__column{
         display: flex;
         justify-content: space-between;
+        &.reserve{
+            display: block;
+        }
     }
     &__input{
         width: 100%;
@@ -443,6 +446,7 @@
 .menu__list a {
     padding: 10px 15px;
     color:#fff;
+    transition: all 0.3s ease-in-out;
 }
 .menu__list a:hover {color: #ccc;}
 .menu__list li {
@@ -487,6 +491,13 @@
     top: 72px;
     left: 20px;
     z-index: 10;
+}
+.menu-item.hamburger-phone{
+    display: none;
+    a{
+        display: flex;
+        align-items: center;
+    }
 }
 
 .bar {
