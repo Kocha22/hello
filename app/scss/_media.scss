@@ -1,29 +1,59 @@
-@media (max-width: 1500px) {
-    .header__item-inner{
-        left: 150px;
+@media (max-width: 1200px) {
+    .container{
+        padding: 0 20px;
     }
-}
+    .container-top{
+        padding: 0 20px;
+    }
+    .header__content{
+        height: auto;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .header__content{
+        color: #000;
+    }
+    .header .header__bg {
+        max-width: 1170px;
+        height: 600px;
+        margin: 0 20px;
+        position: static;
 
-@media (max-width: 1353px) {
-    .header__item-inner{
-        left: 150px;
     }
-    .news__item{
-        max-width: 350px;
+    .header .header__bg::after{
+        display: none;
     }
-    .news__item-img{
-        width: 350px;
-        height: 236px;
+    .social-link{
+        color: #000;
     }
-}
-
-@media (max-width: 731px) {
-    .service__list{
-        justify-content: center;
+    .header__size-link{
+        border: 1px solid #000;
+    }
+    .menu__list a{
+        color: #000;
+    }
+    .foto .swiper-slide{
+        width: 570px;
+        height: auto;
+        width: 100%;
+    }
+    .slide-image {
+        width: 570px;
+    }
+    .lunchmenu__content.lunchmenu-right{
+        padding-left: 30px;
+        padding-right: 20px;
     }
 }
 
 @media screen and (max-width: 1020px) {
+    .header__inner-logo{
+        margin-left: 35px;
+    }
     .active {
         display: block;
     }
@@ -32,7 +62,9 @@
         top: 151px;
         left: 0;
         z-index: 10;
-        width: 100%;
+        width: 200px;
+        background-color: #fff;
+        box-shadow: 2px 2px 3px 0px #2125471a;
     }
     .menu__list > li {
         float: none;
@@ -44,6 +76,9 @@
         background-image: url("images/downArrow.png");
         background-repeat: no-repeat;
         background-position: 95% 50%;
+    }
+    .menu__list > li > a {
+        border-bottom: 1px solid #ccc;
     }
     .menu__list ul {
         display: block;
